@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0" prefWidth="281.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Button id="print" fx:id="printButton" mnemonicParsing="false" text="Drucken" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="14.0" />
+    <TextArea fx:id="address" prefHeight="101.0" prefWidth="208.0" text="" wrapText="true" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="30.0" />
+    <Label layoutX="18.0" layoutY="10.0" text="Adresse:" />
+    <Label text="Zeile:" textAlignment="RIGHT" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="115.0" />
+    <TextField fx:id="row" alignment="CENTER_RIGHT" prefWidth="97.0" text="1" AnchorPane.bottomAnchor="72.0" AnchorPane.rightAnchor="14.0" />
+    <Label text="Spalte:" textAlignment="RIGHT" AnchorPane.bottomAnchor="49.0" AnchorPane.rightAnchor="115.0" />
+    <TextField fx:id="column" alignment="CENTER_RIGHT" prefWidth="97.0" text="1" AnchorPane.bottomAnchor="46.0" AnchorPane.rightAnchor="14.0" />
+    <Button id="print" fx:id="settingsButton" layoutX="14.0" mnemonicParsing="false" text="Einstellungen …" AnchorPane.bottomAnchor="15.0" />
+  </children>
+</AnchorPane>
