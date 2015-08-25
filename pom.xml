@@ -14,7 +14,7 @@
 	<repositories>
 		<repository>
 			<id>feuermurmel-json</id>
-			<url>https://raw.github.com/feuermurmel/json/mvn-repo</url>
+			<url>https://feuermurmel.github.io/maven</url>
 		</repository>
 	</repositories>
 	<build>
@@ -54,7 +54,7 @@
 		<dependency>
 			<groupId>ch.feuermurmel.json</groupId>
 			<artifactId>feuermurmel-json</artifactId>
-			<version>0.2.3</version>
+			<version>0.2.8</version>
 		</dependency>
 	</dependencies>
 </project>
