@@ -67,17 +67,6 @@ public class Printing {
 		PrinterJob job = PrinterJob.createPrinterJob();
 		
 		if (job.showPrintDialog(null)) {
-			Pane pane = new Pane();
-			pane.setLayoutX(-50);
-			pane.setLayoutY(-50);
-			
-			Label label1 = new Label("Test 123\nFoo Bar");
-			label1.setLayoutX(50);
-			label1.setLayoutY(50);
-			label1.setFont(Font.font("Helvetica", 12));
-			
-			pane.getChildren().add(label1);
-			
 			PageLayout originalPageLayout = job.getJobSettings().getPageLayout();
 			PageLayout newPageLayout = job.getPrinter().createPageLayout(originalPageLayout.getPaper(), originalPageLayout.getPageOrientation(), Printer.MarginType.HARDWARE_MINIMUM);
 			
