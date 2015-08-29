@@ -9,8 +9,8 @@ import javafx.print.Printer;
 import javafx.print.PrinterJob;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
@@ -35,11 +35,11 @@ public class Printing {
 				double labelOriginX = originX + settings.labelWidth * settings.currentColumn + settings.leftOffset;
 				double labelOriginY = originY + settings.labelHeight * settings.currentRow + settings.topOffset;
 				
-				HBox hbox = new HBox();
-				hbox.setLayoutX(labelOriginX * metersToPoints);
-				hbox.setLayoutY(labelOriginY * metersToPoints);
+				VBox vbox = new VBox();
+				vbox.setLayoutX(labelOriginX * metersToPoints);
+				vbox.setLayoutY(labelOriginY * metersToPoints);
 				
-				hbox.getChildren().addAll(
+				vbox.getChildren().addAll(
 					Arrays
 						.asList(settings.currentAddress.split("\n"))
 						.stream()
@@ -57,7 +57,7 @@ public class Printing {
 				
 				pane.setLayoutX(-pageLayout.getLeftMargin());
 				pane.setLayoutY(-pageLayout.getTopMargin());
-				pane.getChildren().add(hbox);
+				pane.getChildren().add(vbox);
 				
 				return pane;
 			});
