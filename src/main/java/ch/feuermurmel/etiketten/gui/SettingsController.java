@@ -17,6 +17,7 @@ public final class SettingsController {
 		outputSettingsValues();
 		
 		stage.setOnCloseRequest(this::handleStageCloseRequested);
+		stage.setTitle("Einstellungen");
 		stage.setScene(new Scene(view.root()));
 		stage.setResizable(false);
 	}

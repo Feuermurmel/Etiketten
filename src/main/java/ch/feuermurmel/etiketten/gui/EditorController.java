@@ -22,6 +22,7 @@ public final class EditorController {
 		outputSettingsValues();
 		
 		Stage stage = new Stage();
+		stage.setTitle("Etiketten");
 		stage.setOnCloseRequest(this::handleStageCloseRequest);
 		stage.setScene(new Scene(view.root()));
 		stage.setResizable(false);
