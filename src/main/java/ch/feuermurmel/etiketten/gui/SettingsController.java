@@ -1,6 +1,6 @@
-package ch.feuermurmel.ettiketten.gui;
+package ch.feuermurmel.etiketten.gui;
 
-import ch.feuermurmel.ettiketten.Settings;
+import ch.feuermurmel.etiketten.Settings;
 import ch.feuermurmel.javafx.Loader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;

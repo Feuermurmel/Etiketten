@@ -1,4 +1,4 @@
-package ch.feuermurmel.ettiketten;
+package ch.feuermurmel.etiketten;
 
 import java.io.IOException;
 import java.nio.file.Path;

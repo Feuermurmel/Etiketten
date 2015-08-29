@@ -1,7 +1,7 @@
-package ch.feuermurmel.ettiketten.gui;
+package ch.feuermurmel.etiketten.gui;
 
-import ch.feuermurmel.ettiketten.Printing;
-import ch.feuermurmel.ettiketten.Settings;
+import ch.feuermurmel.etiketten.Printing;
+import ch.feuermurmel.etiketten.Settings;
 import ch.feuermurmel.javafx.Loader;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;

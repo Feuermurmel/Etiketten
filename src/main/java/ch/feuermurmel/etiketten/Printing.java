@@ -1,4 +1,4 @@
-package ch.feuermurmel.ettiketten;
+package ch.feuermurmel.etiketten;
 
 import java.util.Arrays;
 import java.util.function.Function;

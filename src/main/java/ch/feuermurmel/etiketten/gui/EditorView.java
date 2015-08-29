@@ -1,4 +1,4 @@
-package ch.feuermurmel.ettiketten.gui;
+package ch.feuermurmel.etiketten.gui;
 
 import ch.feuermurmel.javafx.View;
 import javafx.scene.control.Button;

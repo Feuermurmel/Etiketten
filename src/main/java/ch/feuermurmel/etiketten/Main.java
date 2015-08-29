@@ -1,7 +1,7 @@
-package ch.feuermurmel.ettiketten;
+package ch.feuermurmel.etiketten;
 
-import ch.feuermurmel.ettiketten.gui.EditorController;
-import ch.feuermurmel.ettiketten.gui.SettingsController;
+import ch.feuermurmel.etiketten.gui.EditorController;
+import ch.feuermurmel.etiketten.gui.SettingsController;
 import javafx.application.Application;
 import javafx.stage.Stage;
 

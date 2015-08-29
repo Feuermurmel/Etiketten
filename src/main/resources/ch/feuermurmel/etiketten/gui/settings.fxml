@@ -9,7 +9,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.00007792968245" prefWidth="258.0002779296774" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
   <children>
-    <Label layoutX="16.0" layoutY="11.0" text="Ettiketten">
+    <Label layoutX="16.0" layoutY="11.0" text="Etiketten">
       <font>
         <Font name="System Bold" size="13.0" fx:id="x1" />
       </font>
