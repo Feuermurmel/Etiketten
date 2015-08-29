@@ -70,6 +70,7 @@ public class Printing {
 			PageLayout originalPageLayout = job.getJobSettings().getPageLayout();
 			PageLayout newPageLayout = job.getPrinter().createPageLayout(originalPageLayout.getPaper(), originalPageLayout.getPageOrientation(), Printer.MarginType.HARDWARE_MINIMUM);
 			
+			job.getJobSettings().setJobName("Etiketten");
 			job.printPage(newPageLayout, getNode.apply(newPageLayout));
 			job.endJob();
 			
