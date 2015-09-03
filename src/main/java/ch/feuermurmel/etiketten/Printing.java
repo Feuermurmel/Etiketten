@@ -5,6 +5,8 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import javafx.print.PageLayout;
+import javafx.print.PageOrientation;
+import javafx.print.Paper;
 import javafx.print.Printer;
 import javafx.print.PrinterJob;
 import javafx.scene.Node;
@@ -21,11 +23,16 @@ public class Printing {
 	
 	private static final double metersToPoints = 72 / 25.4e-3;
 	
+	// Hardcoded settings
+	private static final String font = "Helvetica Neue";
+	private static final Paper paper = Paper.A4;
+	private static final PageOrientation orientation = PageOrientation.PORTRAIT;
+	
 	@SuppressWarnings("DynamicRegexReplaceableByCompiledPattern")
 	public static boolean paintAddress(Settings settings) {
 		return printNode(
 			pageLayout -> {
-				Font font = Font.font("Helvetica Neue", FontWeight.NORMAL, FontPosture.REGULAR, settings.fontSize);
+				Font font = Font.font(Printing.font, FontWeight.NORMAL, FontPosture.REGULAR, settings.fontSize);
 				
 				double pageWidth = pageLayout.getPaper().getWidth() / metersToPoints;
 				double pageHeight = pageLayout.getPaper().getHeight() / metersToPoints;
@@ -67,8 +74,7 @@ public class Printing {
 		PrinterJob job = PrinterJob.createPrinterJob();
 		
 		if (job.showPrintDialog(null)) {
-			PageLayout originalPageLayout = job.getJobSettings().getPageLayout();
-			PageLayout newPageLayout = job.getPrinter().createPageLayout(originalPageLayout.getPaper(), originalPageLayout.getPageOrientation(), Printer.MarginType.HARDWARE_MINIMUM);
+			PageLayout newPageLayout = job.getPrinter().createPageLayout(paper, orientation, Printer.MarginType.HARDWARE_MINIMUM);
 			
 			job.getJobSettings().setJobName("Etiketten");
 			job.printPage(newPageLayout, getNode.apply(newPageLayout));
