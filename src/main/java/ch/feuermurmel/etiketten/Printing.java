@@ -24,7 +24,7 @@ public class Printing {
 	private static final double metersToPoints = 72 / 25.4e-3;
 	
 	// Hardcoded settings
-	private static final String font = "Helvetica Neue";
+	private static final String font = "Helvetica";
 	private static final Paper paper = Paper.A4;
 	private static final PageOrientation orientation = PageOrientation.PORTRAIT;
 	
@@ -32,7 +32,7 @@ public class Printing {
 	public static boolean paintAddress(Settings settings) {
 		return printNode(
 			pageLayout -> {
-				Font font = Font.font(Printing.font, FontWeight.NORMAL, FontPosture.REGULAR, settings.fontSize);
+				Font font = Font.font(Printing.font, FontWeight.MEDIUM, FontPosture.REGULAR, settings.fontSize);
 				
 				double pageWidth = pageLayout.getPaper().getWidth() / metersToPoints;
 				double pageHeight = pageLayout.getPaper().getHeight() / metersToPoints;
